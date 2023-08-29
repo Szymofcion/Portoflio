@@ -32,11 +32,11 @@ const Nav = () => {
           <div className="line"></div>
         </div>
         <div className="nav__container-icons">
-          <a className="nav__container-icons--icon" href="">
+          <a className="nav__container-icons--icon" >
             <FaBeer /> Github
           </a>
           <div className="line"></div>
-          <a className="nav__container-icons--icon" href="">
+          <a className="nav__container-icons--icon" >
             <FaBeer /> LinkedIn
           </a>
         </div>

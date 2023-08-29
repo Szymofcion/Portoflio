@@ -17,6 +17,7 @@
   &__container {
     background-color: #7a48ff;
     height: 100vh;
+    margin-top: 1em;
     &-links {
       display: flex;
       justify-content: center;
@@ -25,10 +26,53 @@
       font-size: 2em;
       background-color: #7dfabb;
       color: #8442ff;
-      border-radius: 100px;
       margin: 0 1em;
+      border-radius: 120px;
       &--link {
-        margin: 0.5em 0;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0.5em 0;
+        transition: 0.3s;
+      }
+      &--link::after,
+      &--link::before {
+        content: "";
+        position: absolute;
+        transition: 0.3s;
+      }
+      &--link::before {
+        top: 7px;
+        left: 30%;
+        border-top: 0 solid#8442ff;
+        border-left: 0 solid#8442ff;
+      }
+
+      &--link::after {
+        bottom: 8px;
+        right: 30%;
+        border-bottom: 0 solid#8442ff;
+        border-right: 0 solid#8442ff;
+      }
+      &--link:hover::after,
+      &--link:hover::before {
+        width: 25px;
+        height: 25px;
+      }
+      &--link:hover:before {
+        top: 7px;
+        left: 30%;
+        border-top: 3px solid#8442ff;
+        border-left: 3px solid#8442ff;
+      }
+
+      &--link:hover::after {
+        bottom: 8px;
+        right: 30%;
+        border-bottom: 3px solid#8442ff;
+        border-right: 3px solid#8442ff;
       }
       .line {
         width: 100%;
@@ -48,7 +92,7 @@
         padding: 0.5em 0;
         height: 100%;
         width: 100%;
-        background-color: #7dfabb;
+        background-color: #7dfae9;
       }
       &-icon {
         margin-top: 2em;

@@ -1,11 +1,14 @@
-import Nav from "./components/nav";
+import Nav from "./components/Nav";
+import LoaderMain from "./components/LoaderMain";
+import ParticlesBackground from "./components/ParticlesBackground";
 import "./App.css";
 
 function App() {
   return (
     <>
       <Nav />
-      <h1>Portoflio Szymon Dziewa</h1>
+      <LoaderMain />
+      <ParticlesBackground />
     </>
   );
 }

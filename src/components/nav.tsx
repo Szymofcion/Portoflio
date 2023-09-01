@@ -1,4 +1,4 @@
-import "./nav.scss";
+import "./Nav.scss";
 import { useState } from "react";
 import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 const Nav = () => {

@@ -1,7 +1,7 @@
 import Nav from "./components/Nav";
 import LoaderMain from "./components/LoaderMain";
-import ParticlesBackground from "./components/ParticlesBackground";
 import "./App.css";
+import ParticlesBackground from "./components/ParticlesBackground";
 
 function App() {
   return (

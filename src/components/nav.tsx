@@ -1,6 +1,7 @@
 import "./Nav.scss";
 import { useState } from "react";
 import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+
 const Nav = () => {
   const [visibleNav, setVisibleNav] = useState<boolean>(false);
 
@@ -20,6 +21,7 @@ const Nav = () => {
           onClick={toggleNav}
         ></input>
       </div>
+
       <div className={`nav__container ${visibleNav ? "" : "visible"}`}>
         <div className="nav__container-links">
           <a className="nav__container-links--link">Home</a>
@@ -32,11 +34,11 @@ const Nav = () => {
           <div className="line"></div>
         </div>
         <div className="nav__container-icons">
-          <a className="nav__container-icons--icon" >
+          <a className="nav__container-icons--icon">
             <FaBeer /> Github
           </a>
           <div className="line"></div>
-          <a className="nav__container-icons--icon" >
+          <a className="nav__container-icons--icon">
             <FaBeer /> LinkedIn
           </a>
         </div>

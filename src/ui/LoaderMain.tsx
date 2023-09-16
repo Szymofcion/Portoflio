@@ -6,7 +6,7 @@ const LoaderMain = () => {
 
   return (
   
-  <></>
+  <div className="loader"></div>
   );
 };
 

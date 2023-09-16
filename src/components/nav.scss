@@ -6,6 +6,8 @@
   flex-direction: column;
   background-color: #7a48ff;
   color: #7dfabb;
+  border-radius: 15px;
+  z-index: 10;
   &__main {
     display: flex;
     align-items: center;

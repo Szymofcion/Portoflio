@@ -11,18 +11,44 @@ import "./Icons.scss";
 
 const Icons = () => {
   return (
-    <div className="icons">
-      <img className="icons__css" src={css} />
-      <img className="icons__html" src={html} />
-      <img className="icons__ts" src={ts} />
-      <img className="icons__js" src={js} />
-      <img className="icons__bootstrap" src={bootstrap} />
-      <img className="icons__vsc" src={vsc} />
-      <img className="icons__figma" src={figma} />
-      <img className="icons__api" src={api} />
-      <img className="icons__react" src={react} />
-     
-    </div>
+    <>
+      <h2 className="title">Techlogies i use</h2>
+      <div className="orbit">
+        <div className="orbit__center">
+          <img className="orbit__center-img" src={html} />
+          <img className="orbit__center-img" src={react} />
+        </div>
+        <ul className="icons">
+          <li>
+            <img className="icons__css" src={css} />
+          </li>
+          <li>
+            <img className="icons__html" src={html} />
+          </li>
+          <li>
+            <img className="icons__ts" src={ts} />
+          </li>
+          <li>
+            <img className="icons__js" src={js} />
+          </li>
+          <li>
+            <img className="icons__bootstrap" src={bootstrap} />
+          </li>
+          <li>
+            <img className="icons__vsc" src={vsc} />
+          </li>
+          <li>
+            <img className="icons__figma" src={figma} />
+          </li>
+          <li>
+            <img className="icons__api" src={api} />
+          </li>
+          <li>
+            <img className="icons__react" src={react} />
+          </li>
+        </ul>
+      </div>
+    </>
   );
 };
 

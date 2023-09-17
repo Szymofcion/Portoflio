@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import LoaderMain from "./ui/LoaderMain";
 import Main from "./components/Main";
 import Icons from "./components/Icons";
+import AboutMe from "./components/AboutMe";
 import "./App.css";
 // import { useLayoutEffect, useRef } from "react";
 // import Circle from "./ui/Circle";
@@ -21,6 +22,7 @@ function App() {
         {/* <Circle ref={circleRef} /> */}
         <Main />
         <Icons />
+        <AboutMe />
         <LoaderMain />
         <LoaderMain />
       </div>

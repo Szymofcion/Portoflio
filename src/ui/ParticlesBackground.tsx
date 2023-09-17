@@ -29,10 +29,10 @@ const ParticlesBackground = () => {
         fpsLimit: 120,
         interactivity: {
           events: {
-            onClick: {
-              enable: true,
-              mode: "push",
-            },
+            // onClick: {
+            //   enable: true,
+            //   mode: "push",
+            // },
             onHover: {
               enable: true,
               mode: "repulse",
@@ -75,7 +75,7 @@ const ParticlesBackground = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 90,
           },
           opacity: {
             value: 0.5,

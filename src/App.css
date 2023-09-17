@@ -6,3 +6,10 @@ body {
 a {
   text-decoration: none;
 }
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.background-main {
+  background-color: #7a48ff;
+}

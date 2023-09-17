@@ -14,13 +14,15 @@ function App() {
   //   }
   // }, []);
   return (
-    <>
+    <div className="background-main">
+      <div className="wrapper">
       <Nav />
-      {/* <Circle ref={circleRef} /> */}
-      <Main />
-      <LoaderMain />
-      <LoaderMain />
-    </>
+        {/* <Circle ref={circleRef} /> */}
+        <Main />
+        <LoaderMain />
+        <LoaderMain />
+      </div>
+    </div>
   );
 }
 

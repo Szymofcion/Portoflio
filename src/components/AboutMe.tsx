@@ -1,7 +1,7 @@
 import "./AboutMe.scss";
 const AboutMe = () => {
   return (
-    <div className="aboutme">
+    <section className="aboutme" id="aboutMe">
       <div className="aboutme__container">
         <h2 className="aboutme__container-title">About me</h2>
         <p className="aboutme__container-description">
@@ -18,7 +18,7 @@ const AboutMe = () => {
       <div className="aboutme__bottom">
         <button className="aboutme__bottom-button">Contact Me</button>
       </div>
-    </div>
+    </section>
   );
 };
 

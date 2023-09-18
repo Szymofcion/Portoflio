@@ -23,9 +23,18 @@ const NewNav = () => {
       {showNavigation && (
         <nav className="nav">
           <div className="nav__container">
-            <p><FaBeer/></p>
-            <p><FaBeer/></p>
-            <p><FaBeer/></p>
+            <a href="#main">
+              <FaBeer />
+            </a>
+            <a href="#technolgies">
+              <FaBeer />
+            </a>
+            <a href="#myProject">
+              <FaBeer />
+            </a>
+            <a href="#aboutMe">
+              <FaBeer />
+            </a>
           </div>
         </nav>
       )}

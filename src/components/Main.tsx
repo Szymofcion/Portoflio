@@ -4,7 +4,7 @@ import ParticlesBackground from "../ui/ParticlesBackground";
 import "./Main.scss";
 const Main = () => {
   return (
-    <div className="container">
+    <section className="container" id="main">
       <ParticlesBackground />
       <div className="container__top">
         <button className="container__top-button">Stay in touch</button>
@@ -36,7 +36,7 @@ const Main = () => {
       <a className="container__arrow bounce-top " href="#aboutus">
         <FaBeer />
       </a>
-    </div>
+    </section>
   );
 };
 export default Main;

@@ -11,7 +11,7 @@ import "./Icons.scss";
 
 const Icons = () => {
   return (
-    <div className="background-orbit">
+    <section className="background-orbit" id="technolgies">
       <h2 className="title">Techlogies i use</h2>
       <div className="orbit">
         <div className="orbit__center">
@@ -45,7 +45,7 @@ const Icons = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

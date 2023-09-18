@@ -4,7 +4,7 @@ import "./MyProjects.scss";
 const MyProjects = () => {
   return (
     <>
-      <div className="projects">
+      <section className="projects" id="myProject">
         <h2 className="projects-title">My Procjects</h2>
         <div className="projects__container">
           <div className="projects__container-box">
@@ -44,7 +44,7 @@ const MyProjects = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

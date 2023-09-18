@@ -1,5 +1,6 @@
 .aboutme {
   margin-top: 3em;
+  width: 500px;
   &__container {
     display: flex;
     justify-content: center;
@@ -8,9 +9,26 @@
     &-title {
       font-size: 2em;
     }
-    &-description {
-      padding: 0 1em
-      ;
+  }
+  &__bottom {
+    margin: 1em 2em;
+    &-button {
+      cursor: pointer;
+      font-family: "Bangers", sans-serif;
+      padding: 0.8em 1em;
+      border-radius: 15px;
+      border: none;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      color: #7a48ff;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: #69c5fa;
+      border: 1px solid #69c5fa;
+      letter-spacing: 1px;
+    }
+    &-button:hover {
+      box-shadow: 0px 15px 20px #69c5fa44;
+      transform: translateY(-2px);
     }
   }
 }

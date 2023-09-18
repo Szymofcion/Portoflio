@@ -1,17 +1,18 @@
 .title {
+  margin-top: 2em;
   padding: 0 1em;
-  width: 100%;
   font-size: 2em;
   letter-spacing: 2px;
   color: #7dfabb;
 }
 .background-orbit {
   height: 50vh;
+  width: 500px;
 }
 .orbit {
   margin-top: 10em;
-  position: absolute;
-  right: 50%;
+  display: flex;
+  justify-content: center;
   &__center {
     position: relative;
     &-img {
@@ -51,6 +52,8 @@
       }
       img {
         width: 3rem;
+        padding: 0.5em;
+        border-radius: 50%;
         animation: orbit 60s linear reverse infinite,
           throb 1s var(--throb-delay) ease-in-out infinite alternate;
       }
@@ -79,6 +82,33 @@
     li:nth-child(8) {
       transform: translate(5rem, -5rem);
     }
+    &__css {
+      box-shadow: 0px 8px 15px rgb(41, 53, 160);
+    }
+    &__html {
+      box-shadow: 0px 8px 15px rgba(153, 19, 19, 0.726);
+    }
+    &__ts {
+      box-shadow: 0px 8px 15px rgba(53, 11, 170, 0.986);
+    }
+    &__js {
+      box-shadow: 0px 8px 15px rgba(194, 197, 11, 0.644);
+    }
+    &__bootstrap {
+      box-shadow: 0px 8px 15px rgba(172, 15, 164, 0.842);
+    }
+    &__vsc {
+      box-shadow: 0px 8px 15px rgba(11, 108, 187, 0.897);
+    }
+    &__figma {
+      box-shadow: 0px 8px 15px rgba(219, 20, 159, 0.856);
+    }
+    &__api {
+      box-shadow: 0px 8px 15px rgba(20, 83, 219, 0.856);
+    }
+    &__react {
+      box-shadow: 0px 8px 15px rgba(20, 83, 219, 0.856);
+    }
   }
 }
 
@@ -91,46 +121,5 @@
 @keyframes throb {
   100% {
     scale: 1.15;
-  }
-}
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 100%;
-  list-style: none;
-  padding: 0;
-  img {
-    padding: 0.5em;
-    border-radius: 30px;
-  }
-  &__css {
-    box-shadow: 0px 8px 15px rgb(41, 53, 160);
-  }
-  &__html {
-    box-shadow: 0px 8px 15px rgba(153, 19, 19, 0.726);
-  }
-  &__ts {
-    box-shadow: 0px 8px 15px rgba(53, 11, 170, 0.986);
-  }
-  &__js {
-    box-shadow: 0px 8px 15px rgba(194, 197, 11, 0.644);
-  }
-  &__bootstrap {
-    box-shadow: 0px 8px 15px rgba(172, 15, 164, 0.842);
-  }
-  &__vsc {
-    box-shadow: 0px 8px 15px rgba(11, 108, 187, 0.897);
-  }
-  &__figma {
-    box-shadow: 0px 8px 15px rgba(219, 20, 159, 0.856);
-  }
-  &__api {
-    box-shadow: 0px 8px 15px rgba(20, 83, 219, 0.856);
-  }
-  &__react {
-    box-shadow: 0px 8px 15px rgba(20, 83, 219, 0.856);
   }
 }

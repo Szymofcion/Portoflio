@@ -15,7 +15,9 @@ const AboutMe = () => {
           features of this language. Now I master my React skills day by day.
         </p>
       </div>
-      <div></div>
+      <div className="aboutme__bottom">
+        <button className="aboutme__bottom-button">Contact Me</button>
+      </div>
     </div>
   );
 };

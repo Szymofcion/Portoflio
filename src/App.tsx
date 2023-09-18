@@ -1,8 +1,9 @@
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
 import LoaderMain from "./ui/LoaderMain";
 import Main from "./components/Main";
 import Icons from "./components/Icons";
 import AboutMe from "./components/AboutMe";
+import MyProjects from "./components/MyProjects";
 import "./App.css";
 // import { useLayoutEffect, useRef } from "react";
 // import Circle from "./ui/Circle";
@@ -18,11 +19,14 @@ function App() {
   return (
     <div className="background-main">
       <div className="wrapper">
-        <Nav />
+        {/* <Nav /> */}
         {/* <Circle ref={circleRef} /> */}
         <Main />
-        <Icons />
-        <AboutMe />
+        <div className="wrapper-aboutme">
+          <Icons />
+          <AboutMe />
+        </div>
+        <MyProjects />
         <LoaderMain />
         <LoaderMain />
       </div>

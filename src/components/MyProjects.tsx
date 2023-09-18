@@ -1,5 +1,4 @@
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
-import adRespect from "../assets/adRespect.png";
+import adRespect from "../assets/Untitled.png";
 import "./MyProjects.scss";
 
 const MyProjects = () => {
@@ -18,13 +17,6 @@ const MyProjects = () => {
                 user can choose whether to play with "O" or "X", as well as
                 reset the game or leave the room.
               </p>
-              <div>
-                <a>Link A</a>
-                <a>Link B</a>
-              </div>
-              <div>
-                <FaBeer /> <FaBeer /> <FaBeer /> <FaBeer />
-              </div>
             </div>
           </div>
           <div className="projects__container-box">
@@ -37,13 +29,6 @@ const MyProjects = () => {
                 user can choose whether to play with "O" or "X", as well as
                 reset the game or leave the room.
               </p>
-              <div>
-                <a>Link A</a>
-                <a>Link B</a>
-              </div>
-              <div>
-                <FaBeer /> <FaBeer /> <FaBeer /> <FaBeer />
-              </div>
             </div>
           </div>
           <div className="projects__container-box">
@@ -56,13 +41,6 @@ const MyProjects = () => {
                 user can choose whether to play with "O" or "X", as well as
                 reset the game or leave the room.
               </p>
-              <div>
-                <a>Link A</a>
-                <a>Link B</a>
-              </div>
-              <div>
-                <FaBeer /> <FaBeer /> <FaBeer /> <FaBeer />
-              </div>
             </div>
           </div>
         </div>

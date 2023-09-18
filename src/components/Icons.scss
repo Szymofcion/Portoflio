@@ -52,7 +52,7 @@
       }
       img {
         width: 3rem;
-        padding: 0.5em;
+        padding: 0.3em;
         border-radius: 50%;
         animation: orbit 60s linear reverse infinite,
           throb 1s var(--throb-delay) ease-in-out infinite alternate;
@@ -86,16 +86,16 @@
       box-shadow: 0px 8px 15px rgb(41, 53, 160);
     }
     &__html {
-      box-shadow: 0px 8px 15px rgba(153, 19, 19, 0.726);
+      box-shadow: 0px 8px 15px rgba(153, 19, 19, 0.445);
     }
     &__ts {
-      box-shadow: 0px 8px 15px rgba(53, 11, 170, 0.986);
+      box-shadow: 0px 8px 15px rgba(53, 11, 170, 0.493);
     }
     &__js {
-      box-shadow: 0px 8px 15px rgba(194, 197, 11, 0.644);
+      box-shadow: 0px 8px 15px rgba(194, 197, 11, 0.425);
     }
     &__bootstrap {
-      box-shadow: 0px 8px 15px rgba(172, 15, 164, 0.842);
+      box-shadow: 0px 8px 15px rgba(172, 15, 164, 0.5);
     }
     &__vsc {
       box-shadow: 0px 8px 15px rgba(11, 108, 187, 0.897);

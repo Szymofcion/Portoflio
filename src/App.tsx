@@ -5,6 +5,7 @@ import Icons from "./components/Icons";
 import AboutMe from "./components/AboutMe";
 import MyProjects from "./components/MyProjects";
 import "./App.css";
+import NewNav from "./components/NewNav";
 // import { useLayoutEffect, useRef } from "react";
 // import Circle from "./ui/Circle";
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="background-main">
       <div className="wrapper">
+        <NewNav />
         {/* <Nav /> */}
         {/* <Circle ref={circleRef} /> */}
         <Main />

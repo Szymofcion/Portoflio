@@ -11,7 +11,7 @@ import "./Icons.scss";
 
 const Icons = () => {
   return (
-    <>
+    <div className="background-orbit">
       <h2 className="title">Techlogies i use</h2>
       <div className="orbit">
         <div className="orbit__center">
@@ -41,14 +41,11 @@ const Icons = () => {
             <img className="icons__figma" src={figma} />
           </li>
           <li>
-            <img className="icons__api" src={api} />
-          </li>
-          <li>
-            <img className="icons__react" src={react} />
+            <img className="icons__api" src={api}></img>
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

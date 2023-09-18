@@ -1,27 +1,25 @@
 .title {
-  display: flex;
-  justify-content: center;
+  padding: 0 1em;
+  width: 100%;
   font-size: 2em;
   letter-spacing: 2px;
   color: #7dfabb;
 }
-// img {
-//   width: 60px;
-//   height: 60px;
-//   padding: 0.8em;
-//   margin: 0.5em;
-//   border-radius: 30px;
-// }
+.background-orbit {
+  height: 50vh;
+}
 .orbit {
+  margin-top: 10em;
   position: absolute;
   right: 50%;
- 
   &__center {
     position: relative;
     &-img {
-      width: 7rem;
+      width: 4.7rem;
       position: absolute;
       transition: opacity 0.3s;
+      transform: translate(-50%, -50%);
+
       &:not(:first-child):hover {
         opacity: 0;
       }
@@ -29,90 +27,110 @@
   }
   .icons {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    transform: translate(-1.5rem);
+    transform-origin: center;
+    animation: orbit 60s linear infinite;
+    background-color: red;
+    padding: 0;
+    margin: 0;
+    &:hover {
+      animation-play-state: paused;
+      & * {
+        animation-play-state: paused;
+      }
+    }
     li {
       position: absolute;
+      @for $i from 0 through 8 {
+        &:nth-child(#{$i}) {
+          --throb-delay: #{500ms * $i};
+        }
+      }
       img {
-        width: 5rem;
+        width: 3rem;
+        animation: orbit 60s linear reverse infinite,
+          throb 1s var(--throb-delay) ease-in-out infinite alternate;
       }
     }
     li:nth-child(1) {
-      transform: translate(15rem, 0rem);
+      transform: translate(7rem, 0rem);
     }
     li:nth-child(2) {
-      transform: translate(12rem, 10rem);
+      transform: translate(5rem, 5rem);
     }
     li:nth-child(3) {
-      transform: translate(0rem, 15rem);
+      transform: translate(0rem, 7rem);
     }
     li:nth-child(4) {
-      transform: translate(-12rem, 10rem);
+      transform: translate(-5rem, 5rem);
     }
     li:nth-child(5) {
-      transform: translate(-15rem, 0rem);
+      transform: translate(-7rem, 0rem);
     }
     li:nth-child(6) {
-      transform: translate(-10rem, -12rem);
+      transform: translate(-5rem, -5rem);
     }
     li:nth-child(7) {
-      transform: translate(0rem, -15rem);
+      transform: translate(0rem, -7rem);
     }
     li:nth-child(8) {
-      transform: translate(12rem, -12rem);
+      transform: translate(5rem, -5rem);
     }
   }
 }
 
-@keyframes circle {
-  from {
-    rotate: (0);
-  }
-  to {
-    rotate: (360deg);
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
   }
 }
-// .icons {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   margin: 0 auto;
-//   max-width: 100%;
-//   list-style: none;
-//   padding: 0;
-//   img {
-//     width: 60px;
-//     height: 60px;
-//     padding: 0.8em;
-//     margin: 0.5em;
-//     border-radius: 30px;
-//   }
-//   &__css {
-//     box-shadow: 0px 8px 15px rgb(41, 53, 160);
-//   }
-//   &__html {
-//     box-shadow: 0px 8px 15px rgba(153, 19, 19, 0.726);
-//   }
-//   &__ts {
-//     box-shadow: 0px 8px 15px rgba(53, 11, 170, 0.986);
-//   }
-//   &__js {
-//     box-shadow: 0px 8px 15px rgba(194, 197, 11, 0.644);
-//   }
-//   &__bootstrap {
-//     box-shadow: 0px 8px 15px rgba(172, 15, 164, 0.842);
-//   }
-//   &__vsc {
-//     box-shadow: 0px 8px 15px rgba(11, 108, 187, 0.897);
-//   }
-//   &__figma {
-//     box-shadow: 0px 8px 15px rgba(219, 20, 159, 0.856);
-//   }
-//   &__api {
-//     box-shadow: 0px 8px 15px rgba(20, 83, 219, 0.856);
-//   }
-//   &__react {
-//     box-shadow: 0px 8px 15px rgba(20, 83, 219, 0.856);
-//   }
-// }
+
+@keyframes throb {
+  100% {
+    scale: 1.15;
+  }
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 100%;
+  list-style: none;
+  padding: 0;
+  img {
+    padding: 0.5em;
+    border-radius: 30px;
+  }
+  &__css {
+    box-shadow: 0px 8px 15px rgb(41, 53, 160);
+  }
+  &__html {
+    box-shadow: 0px 8px 15px rgba(153, 19, 19, 0.726);
+  }
+  &__ts {
+    box-shadow: 0px 8px 15px rgba(53, 11, 170, 0.986);
+  }
+  &__js {
+    box-shadow: 0px 8px 15px rgba(194, 197, 11, 0.644);
+  }
+  &__bootstrap {
+    box-shadow: 0px 8px 15px rgba(172, 15, 164, 0.842);
+  }
+  &__vsc {
+    box-shadow: 0px 8px 15px rgba(11, 108, 187, 0.897);
+  }
+  &__figma {
+    box-shadow: 0px 8px 15px rgba(219, 20, 159, 0.856);
+  }
+  &__api {
+    box-shadow: 0px 8px 15px rgba(20, 83, 219, 0.856);
+  }
+  &__react {
+    box-shadow: 0px 8px 15px rgba(20, 83, 219, 0.856);
+  }
+}

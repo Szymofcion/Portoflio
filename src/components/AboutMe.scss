@@ -1,0 +1,16 @@
+.aboutme {
+  margin-top: 3em;
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2em;
+    &-title {
+      font-size: 2em;
+    }
+    &-description {
+      padding: 0 1em
+      ;
+    }
+  }
+}

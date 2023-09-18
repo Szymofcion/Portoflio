@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Bangers", sans-serif;
@@ -15,7 +16,7 @@ h2 {
 }
 p {
   color: #7dfabb;
-  letter-spacing: 1px;
+  letter-spacing: 1px;margin: 0;
 }
 .wrapper {
   max-width: 1600px;
@@ -23,4 +24,8 @@ p {
 }
 .background-main {
   background-color: #7a48ff;
+}
+.wrapper-aboutme {
+  display: flex;
+  flex-wrap: wrap;
 }

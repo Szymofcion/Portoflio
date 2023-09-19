@@ -7,7 +7,7 @@ import vsc from "../assets/achievement/visual-studio.png";
 import figma from "../assets/achievement/figma.png";
 import api from "../assets/achievement/api.png";
 import react from "../assets/achievement/react.png";
-import "./Icons.scss";
+import "./style/Icons.scss";
 
 const Icons = () => {
   return (

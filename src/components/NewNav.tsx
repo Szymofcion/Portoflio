@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
-import "./NewNav.scss";
+import "./style/NewNav.scss";
 
 const NewNav = () => {
   const [showNavigation, setShowNavigation] = useState<boolean>(false);

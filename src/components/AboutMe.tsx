@@ -1,4 +1,4 @@
-import "./AboutMe.scss";
+import "./style/AboutMe.scss";
 const AboutMe = () => {
   return (
     <section className="aboutme" id="aboutMe">

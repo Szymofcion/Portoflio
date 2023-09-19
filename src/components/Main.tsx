@@ -1,7 +1,7 @@
 import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 import { TypeAnimation } from "react-type-animation";
 import ParticlesBackground from "../ui/ParticlesBackground";
-import "./Main.scss";
+import "./style/Main.scss";
 const Main = () => {
   return (
     <section className="container" id="main">

@@ -13,14 +13,19 @@
     &-box {
       cursor: pointer;
       background: #000;
-      background-image: url(../../assets/ShoesShop.png);
       width: 380px;
-      height: 220px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       &--img {
         transition: opacity 0.3s;
+        cursor: pointer;
+        background: #000;
+        width: 380px;
+        height: 220px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
       &--description {
         position: absolute;

@@ -10,7 +10,7 @@ const MyProjects = () => {
         <h2 className="projects-title">My Procjects</h2>
         <div className="projects__container">
           <div className="projects__container-box">
-            {/* <img className="projects__container-box--img" src={adRespect} /> */}
+            <img className="projects__container-box--img" src={adRespect} />
             <a href="https://szymofcion.github.io/adRespect/" target="_blank">
               <div className="projects__container-box--description">
                 <p>

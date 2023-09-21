@@ -1,6 +1,6 @@
 import adRespect from "../assets/Untitled.png";
 import shoesShop from "../assets/ShoesShop.png";
-import cartOrders from "../assets/carOrders.png";
+import carOrders from "../assets/carOrders.png";
 import "./style/MyProjects.scss";
 
 const MyProjects = () => {
@@ -10,6 +10,7 @@ const MyProjects = () => {
         <h2 className="projects-title">My Procjects</h2>
         <div className="projects__container">
           <div className="projects__container-box">
+            <h3>GiardDesign</h3>
             <img className="projects__container-box--img" src={adRespect} />
             <a href="https://szymofcion.github.io/adRespect/" target="_blank">
               <div className="projects__container-box--description">
@@ -20,9 +21,46 @@ const MyProjects = () => {
                   The user can choose whether to play with "O" or "X", as well
                   as reset the game or leave the room.
                 </p>
+                <button>Live</button>
+                <button>Code</button>
               </div>
             </a>
           </div>
+          <div className="projects__container-box">
+            <h3>ShoesShop</h3>
+            <img className="projects__container-box--img" src={shoesShop} />
+            <a href="https://szymofcion.github.io/adRespect/" target="_blank">
+              <div className="projects__container-box--description">
+                <p>
+                  This is a tic-tac-toe multiplayer game. Authentication is used
+                  in the application. The logged-in user can create a game room
+                  to play with another online user or play against the computer.
+                  The user can choose whether to play with "O" or "X", as well
+                  as reset the game or leave the room.
+                </p>
+                <button>Live</button>
+                <button>Code</button>
+              </div>
+            </a>
+          </div>
+          <div className="projects__container-box">
+            <h3>CarOrders</h3>
+            <img className="projects__container-box--img" src={carOrders} />
+            <a href="https://szymofcion.github.io/adRespect/" target="_blank">
+              <div className="projects__container-box--description">
+                <p>
+                  This is a tic-tac-toe multiplayer game. Authentication is used
+                  in the application. The logged-in user can create a game room
+                  to play with another online user or play against the computer.
+                  The user can choose whether to play with "O" or "X", as well
+                  as reset the game or leave the room.
+                </p>
+                <button>Live</button>
+                <button>Code</button>
+              </div>
+            </a>
+          </div>
+          
 
           {/* <a
             href="https://szymofcion.github.io/ShoesShopRedux/"

@@ -2,51 +2,53 @@
   max-width: 900px;
   margin: 0 auto;
   &-title {
+    font-size: 1.7rem;
     padding-top: 2em;
     margin: 0 0 1em 1em;
   }
   &__container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     padding-bottom: 2em;
     &-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       cursor: pointer;
-      background: #000;
-      width: 380px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+      margin: 0 1em;
+      background-color: #1606188c;
+      border-radius: 25px;
+      h3 {
+        color: #7dfabb;
+        margin: 0;
+        padding-top: 1em;
+        letter-spacing: 4px;
+        font-size: 1.5rem;
+      }
       &--img {
         transition: opacity 0.3s;
         cursor: pointer;
-        background: #000;
-        width: 380px;
-        height: 220px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        width: 350px;
       }
       &--description {
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.726);
-        width: 380px;
-        height: 250px;
-        opacity: 0;
-        transition: opacity 0.3s;
-        &:not(:first-child):hover {
-          opacity: 1;
-        }
-        p {
-          margin: 2em 3em 0em 3em;
-        }
-        a {
-          display: flex;
-          justify-content: center;
+        padding: 1.5em;
+        text-align: center;
+        button {
           align-items: center;
-          flex-direction: row;
-          font-size: 1.2em;
-          color: #7dfabb;
+          cursor: pointer;
+          font-family: "Bangers", sans-serif;
+          padding: 0.5em 2em;
+          margin: 1em 1em 0 1em;
+          border-radius: 15px;
+          border: none;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+          color: #7a48ff;
+          font-size: 1rem;
+          font-weight: bold;
+          background-color: #69c5fa;
+          border: 1px solid #69c5fa;
+          letter-spacing: 2px;
         }
       }
     }

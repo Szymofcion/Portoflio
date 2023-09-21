@@ -8,18 +8,13 @@ const ParticlesBackground = () => {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      await console.log(container);
-    },
-    []
-  );
+ 
 
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
+  
       options={{
         background: {
           color: {

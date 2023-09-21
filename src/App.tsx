@@ -11,11 +11,11 @@ function App() {
     <div className="background-main">
       <NewNav />
       <div className="wrapper">
-        {/* <Main />
+        <Main />
         <div className="wrapper-aboutme">
           <Icons />
           <AboutMe />
-        </div> */}
+        </div>
         <MyProjects />
         <Contact />
       </div>

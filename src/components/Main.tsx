@@ -1,4 +1,3 @@
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 import { TypeAnimation } from "react-type-animation";
 import ParticlesBackground from "../ui/ParticlesBackground";
 import "./style/Main.scss";
@@ -16,11 +15,8 @@ const Main = () => {
         <p>
           <span className="text-blue">Frontend</span> Developer
         </p>
-        {/* <p className="container__description-text">
-          Hi, I'am Szymon, a passionate programing from Wroclaw
-        </p> */}
         <TypeAnimation
-          cursor={false} // omit the default css typing animation class
+          cursor={false}
           className="container__description-text type "
           sequence={[
             1500,
@@ -34,7 +30,7 @@ const Main = () => {
         />
       </div>
       <a className="container__arrow bounce-top " href="#aboutus">
-        <FaBeer />
+        ▼
       </a>
     </section>
   );

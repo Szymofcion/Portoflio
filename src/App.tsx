@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe";
 import MyProjects from "./components/MyProjects";
 import "./App.css";
 import NewNav from "./components/NewNav";
+import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <AboutMe />
         </div>
         <MyProjects />
+        <Timeline />
         <Contact />
       </div>
     </div>

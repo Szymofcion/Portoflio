@@ -1,0 +1,35 @@
+.icons__container {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 1em 0em 1em 1.5em;
+    background-color: #7dfabb;
+    margin: 0.3em 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 50%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    span {
+      opacity: 0;
+      margin-left: 1em;
+      font-size: 1.3rem;
+    }
+  }
+
+  li:hover {
+    width: calc(50% + 4em);
+  }
+  li:hover span {
+    opacity: 1;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+}

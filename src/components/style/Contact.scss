@@ -9,7 +9,7 @@
   margin: 2em 3em;
   h2 {
     color: beige;
-    font-size: 3rem
+    font-size: 3rem;
   }
   &-top {
     display: flex;
@@ -21,7 +21,8 @@
   }
   &-label {
     margin-bottom: 0.7em;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    align-self: self-start;
   }
   &-input {
     width: 100%;
@@ -29,14 +30,15 @@
     border: 1px solid #69c5fa;
     border-radius: 25px;
     margin-bottom: 0.7em;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   }
   &-textarea {
     height: 10em;
     width: 100%;
-
     border-radius: 25px;
     margin-bottom: 1.2em;
     border: 1px solid #69c5fa;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   }
   &-btn {
     cursor: pointer;
@@ -46,7 +48,7 @@
     border: none;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     color: #000000;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     background-color: #d1d8db;
     border: 1px solid #ffffff;

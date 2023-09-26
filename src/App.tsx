@@ -20,6 +20,7 @@ function App() {
         <MyProjects />
         <Timeline />
         <Contact />
+        <MyProjects />
       </div>
     </div>
   );

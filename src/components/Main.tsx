@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import ParticlesBackground from "../ui/ParticlesBackground";
+// import image from "../assets/download_image_1695752648297.png";
 import "./style/Main.scss";
 const Main = () => {
   return (
@@ -28,10 +29,13 @@ const Main = () => {
           deletionSpeed={1}
           repeat={4}
         />
+        <a className="container__arrow bounce-top " href="#aboutus">
+          ▼
+        </a>
       </div>
-      <a className="container__arrow bounce-top " href="#aboutus">
-        ▼
-      </a>
+      {/* <div className="container__image">
+        <img src={image} alt="" />
+      </div> */}
     </section>
   );
 };

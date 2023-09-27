@@ -1,5 +1,5 @@
 import "./style/Contact.scss";
-function Contact() {
+const Contact = () => {
   return (
     <form className="contact__form">
       <h2>Get In Touch</h2>
@@ -14,15 +14,12 @@ function Contact() {
           id="msg"
           name=""
         ></textarea>
-        <button
-          type="submit"
-          className="contact__form-btn "
-        >
+        <button type="submit" className="contact__form-btn ">
           SEND IT
         </button>
       </div>
     </form>
   );
-}
+};
 
 export default Contact;

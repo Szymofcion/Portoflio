@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 
 import "./style/Contact.scss";
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 const Contact = () => {
   const [data, setData] = useState({ name: "", email: "", message: "" });
 
@@ -13,7 +13,10 @@ const Contact = () => {
 
   const handleChange = (event: {
     target: {
-      value: SetStateAction<{ name: string; email: string; message: string }>;
+      value: string;
+      name: string;
+      email: string;
+      message: string;
     };
   }) => {
     const value = event.target.value;

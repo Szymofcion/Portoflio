@@ -11,7 +11,7 @@ const Contact = () => {
     message: data.message,
   };
 
-  const handleChange = (event: {
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = (event: {
     target: {
       value: string;
       name: string;

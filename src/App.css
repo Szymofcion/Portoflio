@@ -32,6 +32,11 @@ p {
 .wrapper-aboutme {
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
+}
+#light {
+  background-color: #fff;
+}
+#dark {
+  background-color: #46045e;
 }

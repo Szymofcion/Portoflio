@@ -13,7 +13,7 @@ const Contact = () => {
 
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = (event: {
     target: {
-      value: string;
+    
       name: string;
       email: string;
       message: string;

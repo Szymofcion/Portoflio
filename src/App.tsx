@@ -1,18 +1,19 @@
 import Main from "./components/Main";
-import LeftIcons from './ui/LeftIcons'
+import LeftIcons from "./ui/LeftIcons";
 import Icons from "./components/Icons";
 import AboutMe from "./components/AboutMe";
 import MyProjects from "./components/MyProjects";
 import NewNav from "./components/NewNav";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="background-main" >
-      <LeftIcons/>
+    <div className="background-main">
+      <LeftIcons />
       <NewNav />
       <div className="wrapper">
         <Main />
@@ -23,7 +24,7 @@ function App() {
         <MyProjects />
         <Timeline />
         <Contact />
-        <MyProjects />
+        <Footer />
       </div>
     </div>
   );

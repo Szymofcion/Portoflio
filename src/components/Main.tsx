@@ -15,7 +15,7 @@ const Main = () => {
           Szymon <span className="text-blue text">Dziewa</span>
         </h1>
         <p>
-          <span className="text-blue ">Frontend</span> Developer
+          <span className="text ">Frontend</span> Developer
         </p>
         <TypeAnimation
           cursor={false}

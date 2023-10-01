@@ -1,3 +1,4 @@
+
 import Main from "./components/Main";
 import LeftIcons from "./ui/LeftIcons";
 import Icons from "./components/Icons";
@@ -14,16 +15,12 @@ import "./components/style/thema/_reset.scss";
 import { useTheme } from "./components/context/ThemeContext";
 
 const App = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div className={theme}>
       <div className="background">
-        <button
-          onClick={() => setTheme(theme === "purple" ? "dark" : "purple")}
-        >
-          Switch Theme
-        </button>
+        
         <LeftIcons />
         <NewNav />
         <div className="wrapper">

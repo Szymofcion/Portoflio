@@ -1,6 +1,12 @@
-const ButtonColors = ()=>{
+import { useTheme } from "../components/context/ThemeContext";
 
-    return(<button></button>)
-}
+const ButtonColors = () => {
+  const { theme, setTheme } = useTheme();
+  return (
+    <button onClick={() => setTheme(theme === "purple" ? "dark" : "purple")}>
+      Switch Theme
+    </button>
+  );
+};
 
-export default ButtonColors
+export default ButtonColors;

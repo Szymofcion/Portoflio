@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 import "../components/style/LeftIcons.scss";
+import ButtonColors from "./ButtonColors";
 const LeftIcons = () => {
   const [showIcons, setShowIcons] = useState<boolean>(false);
   useEffect(() => {
@@ -31,6 +32,9 @@ const LeftIcons = () => {
               <FaBeer />
             </a>
             <span>Github</span>
+          </li>
+          <li>
+            <ButtonColors />
           </li>
         </ul>
       )}

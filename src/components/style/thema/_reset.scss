@@ -1,0 +1,24 @@
+@use "../colors/colors" as *;
+.purple {
+  .text {
+    color: $blue;
+  }
+  .text2 {
+    color: $green;
+  }
+  .background {
+    background-color: $background-color;
+  }
+}
+
+.dark {
+  .text {
+    color: $white;
+  }
+  .text2 {
+    color: $green;
+  }
+  .background {
+    background-color: $black;
+  }
+}

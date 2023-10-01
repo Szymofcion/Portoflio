@@ -1,26 +1,26 @@
 // import particlesConfig from "./config/particles-config";
 import { useCallback } from "react";
-import type { Container, Engine } from "tsparticles-engine";
+import type { Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import "../components/style/thema/_reset.scss";
+
 const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);
 
- 
-
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-  
+      className="purple"
       options={{
-        background: {
-          color: {
-            value: "#7a48ff",
-          },
-        },
+        // background: {
+        //   color: {
+        //     value: "#7a48ff",
+        //   },
+        // },
         fpsLimit: 120,
         interactivity: {
           events: {

@@ -1,8 +1,10 @@
+@use "../style/colors/colors" as *;
+
 #tsparticles {
   height: 100%;
 }
 .text-blue {
-  color: #69c5fa;
+  color: $blue;
 }
 .container {
   position: relative;

@@ -1,4 +1,3 @@
-
 import Main from "./components/Main";
 import LeftIcons from "./ui/LeftIcons";
 import Icons from "./components/Icons";
@@ -20,9 +19,8 @@ const App = () => {
   return (
     <div className={theme}>
       <div className="background">
-        
         <LeftIcons />
-        <NewNav />
+        {/* <NewNav /> */}
         <div className="wrapper">
           <Main />
           <div className="wrapper-aboutme">

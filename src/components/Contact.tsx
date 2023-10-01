@@ -51,10 +51,10 @@ const Contact = () => {
       );
   };
   return (
-    <form className="contact__form" onSubmit={sendMail}>
-      <h2>Get In Touch</h2>
-      <div className="contact__form-top">
-        <label className="contact__form-label">Name:</label>
+    <form className="contact__form background-contact" onSubmit={sendMail}>
+      <h2 className="text2">Get In Touch</h2>
+      <div className="contact__form-top ">
+        <label className="contact__form-label text2">Name:</label>
         <input
           type="text"
           className="contact__form-input"
@@ -63,17 +63,17 @@ const Contact = () => {
           name="name"
           value={data.name}
         />
-        <label className="contact__form-label">E-mail:</label>
+        <label className="contact__form-label text2">E-mail:</label>
         <input
           type="text"
-          className="contact__form-input"
+          className="contact__form-input text2"
           name="email"
           id="emailFrom"
           placeholder="person@example.com"
           onChange={handleChange}
           value={data.email}
         />
-        <label className="contact__form-label">Message</label>
+        <label className="contact__form-label text2">Message</label>
         <textarea
           className="contact__form-textarea"
           id="msg"
@@ -81,7 +81,7 @@ const Contact = () => {
           value={data.message}
           onChange={handleChange}
         ></textarea>
-        <button type="submit" className="contact__form-btn ">
+        <button type="submit" className="contact__form-btn text2">
           SEND IT
         </button>
       </div>

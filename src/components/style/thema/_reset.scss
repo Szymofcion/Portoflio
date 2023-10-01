@@ -6,19 +6,37 @@
   .text2 {
     color: $green;
   }
+  .text3 {
+    color: $green;
+  }
   .background {
     background-color: $background-color;
+  }
+  .background-contact {
+    background-color: $background-color-contact1;
+  }
+  .background-footer {
+    background-color: $background-color-footer1;
   }
 }
 
 .dark {
   .text {
-    color: $white;
+    color: $blue;
   }
   .text2 {
     color: $green;
   }
+  .text3 {
+    color: $white;
+  }
   .background {
     background-color: $black;
+  }
+  .background-contact {
+    background-color: $background-color-contact2;
+  }
+  .background-footer {
+    background-color: $background-color-footer2;
   }
 }

@@ -1,37 +1,38 @@
+import { ChangeEvent, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import "./style/Contact.scss";
-import { useState } from "react";
+
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
 const Contact = () => {
-  const [data, setData] = useState({ name: "", email: "", message: "" });
+  const [data, setData] = useState<FormData>({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const templateParams = {
-    name: data.name,
-    email: data.email,
-    message: data.message,
-  };
-
-  const handleChange: React.ChangeEventHandler<HTMLInputElement> = (event: {
-    target: {
-      value: string;
-      name: string;
-      email: string;
-      message: string;
-    };
-  }) => {
-    const value = event.target.value;
+  const handleChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setData({
       ...data,
-      [event.target.name]: value,
-      [event.target.email]: value,
-      [event.target.message]: value,
+      [event.target.name]: event.target.value,
     });
-    console.log(event.target.value);
   };
 
-  const sendMail = (e: { preventDefault: () => void }) => {
-    console.log(templateParams);
+  const sendMail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const templateParams = {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    };
 
     emailjs
       .send(
@@ -49,7 +50,6 @@ const Contact = () => {
         }
       );
   };
-
   return (
     <form className="contact__form" onSubmit={sendMail}>
       <h2>Get In Touch</h2>

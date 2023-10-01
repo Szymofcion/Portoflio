@@ -4,6 +4,7 @@ import React, {
   ReactNode,
   Dispatch,
   SetStateAction,
+  useContext,
 } from "react";
 
 interface ThemeContextProps {
@@ -27,4 +28,13 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
       {children}
     </ThemeContext.Provider>
   );
+};
+
+// eslint-disable-next-line react-refresh/only-export-components
+export const useTheme = (): ThemeContextProps => {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error("useTheme must be used within a ThemeProvider");
+  }
+  return context;
 };

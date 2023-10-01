@@ -10,10 +10,12 @@ import Footer from "./components/Footer";
 
 import "./App.scss";
 import "./components/style/thema/_reset.scss";
-import { useState } from "react";
+
+import { useTheme } from "./components/context/ThemeContext";
 
 const App = () => {
-  const [theme, setTheme] = useState("purple");
+  const { theme, setTheme } = useTheme();
+
   return (
     <div className={theme}>
       <div className="background">

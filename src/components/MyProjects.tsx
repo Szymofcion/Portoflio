@@ -184,7 +184,7 @@ const MyProjects = () => {
           </div>
         </div>
         <div className="dots__container">
-          {slides.map((slide, slideIndex) => (
+          {slides.map((_slide, slideIndex) => (
             <button
               className="dots__container--dot"
               key={slideIndex}

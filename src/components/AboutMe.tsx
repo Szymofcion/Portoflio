@@ -5,14 +5,17 @@ const AboutMe = () => {
       <div className="aboutme__container">
         <h2 className="aboutme__container-title text2">About me</h2>
         <p className="aboutme__container-description text">
-          I'm a Freelance Frontend Developer with passion to code and eager to
-          learn.
+          I'm a React Developer with passion to code and eager to learn.
         </p>
+        <br />
         <p className="aboutme__container-description text">
-          I'm coding since June 2023. My adventure has started with basic HTML
-          and CSS understanding with various courses and projects. Then I jumped
-          right into JS and after a month I understood basics and advanced
-          features of this language. Now I master my React skills day by day.
+          I'm coding since January 2022. My adventure has started with basic
+          HTML and CSS understanding.At that time, I had completed Maika courses
+          on Udemy. After that, I went to postgraduate studies in frontend where
+          I learned Angular. Unfortunately, I realized that Angular doesn't
+          really suit me. I bought courses from Maximilian Schwarzmüller and
+          continued learning in react. I added typescript, redux and several
+          styling frameworks to it
         </p>
       </div>
       <div className="aboutme__bottom">

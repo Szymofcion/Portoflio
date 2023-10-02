@@ -1,13 +1,24 @@
+import { SetStateAction, useState, ReactNode } from "react";
+import {
+  BiLogoJavascript,
+  BiLogoHtml5,
+  BiLogoSass,
+  BiLogoBootstrap,
+  BiLogoCss3,
+} from "react-icons/bi";
+import { SiReactrouter } from "react-icons/si";
+import { LiaCookieSolid } from "react-icons/lia";
+
 import adRespect from "../assets/Untitled.png";
 import shoesShop from "../assets/ShoesShop.png";
 import carOrders from "../assets/carOrders.png";
-import "./style/MyProjects.scss";
-import { SetStateAction, useState } from "react";
+import ultraGamers from "../assets/UltraGamers.png";
 
+import "./style/MyProjects.scss";
 interface Slide {
   title: string;
   src: string;
-  description: string;
+  icons: ReactNode;
 }
 
 const MyProjects = () => {
@@ -17,20 +28,60 @@ const MyProjects = () => {
     {
       src: adRespect,
       title: "GiardDesign",
-      description:
-        "This is a tic-tac-toe multiplayer game. Authentication is used This is a tic-",
+      icons: (
+        <>
+          <BiLogoJavascript />
+          <BiLogoHtml5 /> <BiLogoSass />
+          <BiLogoBootstrap />
+        </>
+      ),
+    },
+    {
+      src: adRespect,
+      title: "Portfolio",
+      icons: (
+        <>
+          <BiLogoJavascript />
+          <BiLogoHtml5 /> <BiLogoSass />
+          <BiLogoBootstrap />
+        </>
+      ),
     },
     {
       src: shoesShop,
       title: "ShoesShop",
-      description:
-        "whether to play with 'O' or 'X', as well as reset the game or leave the room.",
+      icons: (
+        <>
+          <BiLogoJavascript />
+          <BiLogoHtml5 /> <BiLogoSass />
+          <BiLogoBootstrap />
+          <SiReactrouter />
+        </>
+      ),
     },
     {
       src: carOrders,
       title: "CarOrders",
-      description:
-        "whether to play with 'O' or 'X', as well as reset the game or leave the room.",
+      icons: (
+        <>
+          <BiLogoJavascript />
+          <BiLogoHtml5 />
+          <BiLogoCss3 />
+          <LiaCookieSolid />
+        </>
+      ),
+    },
+    {
+      src: ultraGamers,
+      title: "UltraGamers",
+      icons: (
+        <>
+          <BiLogoJavascript />
+          <BiLogoHtml5 />
+          <BiLogoCss3 />
+          <BiLogoBootstrap />
+        </>
+      ),
     },
   ];
 
@@ -43,7 +94,6 @@ const MyProjects = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-
   };
   const goToSlide = (slideIndex: SetStateAction<number>) => {
     setCurrentIndex(slideIndex);
@@ -82,7 +132,7 @@ const MyProjects = () => {
               ❯
             </button>
             <div className="projects__container-box--description">
-              <p>{slides[currentIndex].description}</p>
+              <p>{slides[currentIndex].icons}</p>
               <button>Live</button>
               <button>Code</button>
             </div>

@@ -1,4 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
+
+import { AiOutlineArrowDown } from "react-icons/ai";
 import ParticlesBackground from "../ui/ParticlesBackground";
 // import image from "../assets/download_image_1695752648297.png";
 import "./style/Main.scss";
@@ -31,7 +33,7 @@ const Main = () => {
           repeat={4}
         />
         <a className="container__arrow bounce-top text" href="#aboutus">
-          ▼
+          <AiOutlineArrowDown />
         </a>
       </div>
       {/* <div className="container__image">

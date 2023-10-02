@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+
+import { AiFillGithub } from "react-icons/ai";
+import { GrLinkedinOption } from "react-icons/gr";
 import "../components/style/LeftIcons.scss";
 import ButtonColors from "./ButtonColors";
 const LeftIcons = () => {
@@ -23,13 +25,13 @@ const LeftIcons = () => {
         <ul className="icons__container">
           <li>
             <a>
-              <FaBeer />
+              <GrLinkedinOption />
             </a>
             <span>LinkedIn</span>
           </li>
           <li>
             <a>
-              <FaBeer />
+              <AiFillGithub />
             </a>
             <span>Github</span>
           </li>

@@ -10,24 +10,24 @@ const Timeline = () => {
     <div className="container__timeline">
       <VerticalTimeline>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element"
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami</h4>
-          <p>bardzo fajnie</p>
+          <h3 className="vertical-timeline-element-title">Start coding</h3>
+          <p>creating the first pages</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element"
           date="2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">San Francisco</h4>
-          <p>Patryk czytasz to ?</p>
+          <h3 className="vertical-timeline-element-title">
+            Starting postgraduate studies in frontend
+          </h3>
+          <p>creating the first advanced website</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -38,7 +38,6 @@ const Timeline = () => {
           <h3 className="vertical-timeline-element-title">
             Agile Development Scrum Master
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
           <p>Ekstra xDDDDDDD</p>
         </VerticalTimelineElement>
 

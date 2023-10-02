@@ -5,20 +5,32 @@ import {
   BiLogoSass,
   BiLogoBootstrap,
   BiLogoCss3,
+  BiLogoTypescript,
+  BiLogoReact,
+  BiLogoRedux,
 } from "react-icons/bi";
-import { SiReactrouter } from "react-icons/si";
+import {
+  SiReactrouter,
+  SiGreensock,
+  SiVitess,
+  SiExpress,
+} from "react-icons/si";
 import { LiaCookieSolid } from "react-icons/lia";
 
 import adRespect from "../assets/Untitled.png";
 import shoesShop from "../assets/ShoesShop.png";
 import carOrders from "../assets/carOrders.png";
 import ultraGamers from "../assets/UltraGamers.png";
+import portfolio from "../assets/Portfolio.png";
+import netflix from "../assets/Netflix2.png";
 
 import "./style/MyProjects.scss";
 interface Slide {
   title: string;
   src: string;
   icons: ReactNode;
+  link: string;
+  code: string;
 }
 
 const MyProjects = () => {
@@ -35,29 +47,52 @@ const MyProjects = () => {
           <BiLogoBootstrap />
         </>
       ),
+      link: "https://szymofcion.github.io/adRespect/",
+      code: "https://github.com/Szymofcion/adRespect",
     },
     {
-      src: adRespect,
+      src: portfolio,
       title: "Portfolio",
       icons: (
         <>
-          <BiLogoJavascript />
-          <BiLogoHtml5 /> <BiLogoSass />
-          <BiLogoBootstrap />
+          <BiLogoReact />
+          <BiLogoTypescript />
+          <BiLogoHtml5 /> <SiGreensock />
+          <BiLogoSass />
+          <SiVitess />
         </>
       ),
+      link: "",
+      code: "https://szymofcion.github.io/adRespect/",
     },
     {
       src: shoesShop,
       title: "ShoesShop",
       icons: (
         <>
+          <BiLogoReact />
           <BiLogoJavascript />
           <BiLogoHtml5 /> <BiLogoSass />
-          <BiLogoBootstrap />
           <SiReactrouter />
         </>
       ),
+      link: "https://szymofcion.github.io/ShoesShopRedux/",
+      code: "https://github.com/Szymofcion/ShoesShopRedux",
+    },
+    {
+      src: netflix,
+      title: "NetflixClone",
+      icons: (
+        <>
+          <BiLogoReact />
+          <BiLogoRedux />
+          <SiExpress />
+          <BiLogoJavascript />
+          <BiLogoHtml5 /> <BiLogoSass />
+        </>
+      ),
+      link: "",
+      code: "https://github.com/Szymofcion/Netflix-Clon",
     },
     {
       src: carOrders,
@@ -70,6 +105,8 @@ const MyProjects = () => {
           <LiaCookieSolid />
         </>
       ),
+      link: "https://szymofcion.github.io/car_orders/",
+      code: "https://github.com/Szymofcion/car_orders",
     },
     {
       src: ultraGamers,
@@ -82,6 +119,8 @@ const MyProjects = () => {
           <BiLogoBootstrap />
         </>
       ),
+      link: "https://szymofcion.github.io/UltraGamers/",
+      code: "https://github.com/Szymofcion/UltraGamers",
     },
   ];
 
@@ -133,8 +172,14 @@ const MyProjects = () => {
             </button>
             <div className="projects__container-box--description">
               <p>{slides[currentIndex].icons}</p>
-              <button>Live</button>
-              <button>Code</button>
+              {currentIndex !== 3 && (
+                <button>
+                  <a href={slides[currentIndex].link}>Live</a>
+                </button>
+              )}
+              <button>
+                <a href={slides[currentIndex].code}>Code</a>
+              </button>
             </div>
           </div>
         </div>

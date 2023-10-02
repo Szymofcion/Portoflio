@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import { SiAboutdotme } from "react-icons/si";
+import { GoProjectSymlink } from "react-icons/go";
+import { GrContact } from "react-icons/gr";
 import "./style/NewNav.scss";
 
 const NewNav = () => {
@@ -23,17 +25,14 @@ const NewNav = () => {
       {showNavigation && (
         <nav className="nav">
           <div className="nav__container">
-            <a href="#main">
-              <FaBeer />
-            </a>
             <a href="#technolgies">
-              <FaBeer />
+              <SiAboutdotme />
             </a>
             <a href="#myProject">
-              <FaBeer />
+              <GoProjectSymlink />
             </a>
             <a href="#aboutMe">
-              <FaBeer />
+              <GrContact />
             </a>
           </div>
         </nav>

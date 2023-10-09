@@ -15,6 +15,33 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [errors, setErrors] = useState<Partial<FormData>>({});
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors: Partial<FormData> = {};
+
+    if (!data.name.trim()) {
+      newErrors.name = "Name is required";
+      isValid = false;
+    }
+
+    if (!data.email.trim()) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+      newErrors.email = "Invalid email format";
+      isValid = false;
+    }
+
+    if (!data.message.trim()) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
 
   const handleChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -28,32 +55,35 @@ const Contact = () => {
   const sendMail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const templateParams = {
-      name: data.name,
-      email: data.email,
-      message: data.message,
-    };
+    if (validateForm()) {
+      const templateParams = {
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      };
 
-    emailjs
-      .send(
-        "service_66hujqe",
-        "template_qm5gxop",
-        templateParams,
-        "1ZuleerAVWhMqfbL1"
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (err) => {
-          console.log("FAILED...", err);
-        }
-      );
+      emailjs
+        .send(
+          "service_66hujqe",
+          "template_qm5gxop",
+          templateParams,
+          "1ZuleerAVWhMqfbL1"
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (err) => {
+            console.log("FAILED...", err);
+          }
+        );
+    }
   };
+
   return (
     <form className="contact__form background-contact" onSubmit={sendMail} id="contact">
       <h2 className="text2">Get In Touch</h2>
-      <div className="contact__form-top ">
+      <div className="contact__form-top">
         <label className="contact__form-label text2">Name:</label>
         <input
           type="text"
@@ -63,6 +93,8 @@ const Contact = () => {
           name="name"
           value={data.name}
         />
+        {errors.name && <span className="error">{errors.name}</span>}
+
         <label className="contact__form-label text2">E-mail:</label>
         <input
           type="text"
@@ -73,6 +105,8 @@ const Contact = () => {
           onChange={handleChange}
           value={data.email}
         />
+        {errors.email && <span className="error">{errors.email}</span>}
+
         <label className="contact__form-label text2">Message</label>
         <textarea
           className="contact__form-textarea"
@@ -80,7 +114,9 @@ const Contact = () => {
           name="message"
           value={data.message}
           onChange={handleChange}
-        ></textarea>
+        />
+        {errors.message && <span className="error">{errors.message}</span>}
+
         <button type="submit" className="contact__form-btn text2">
           SEND IT
         </button>

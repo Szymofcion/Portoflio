@@ -10,7 +10,9 @@ const Main = () => {
     <section className="container" id="main">
       <ParticlesBackground />
       <div className="container__top">
-        <button className="container__top-button">Stay in touch</button>
+        <a href="#contact">
+          <button className="container__top-button">Stay in touch</button>
+        </a>
       </div>
       <div className="container__description">
         <h1 className="text2">

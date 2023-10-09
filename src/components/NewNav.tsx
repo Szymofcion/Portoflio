@@ -31,7 +31,7 @@ const NewNav = () => {
             <a href="#myProject">
               <GoProjectSymlink />
             </a>
-            <a href="#aboutMe">
+            <a href="#contact">
               <GrContact />
             </a>
           </div>

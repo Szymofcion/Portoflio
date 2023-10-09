@@ -51,7 +51,7 @@ const Contact = () => {
       );
   };
   return (
-    <form className="contact__form background-contact" onSubmit={sendMail}>
+    <form className="contact__form background-contact" onSubmit={sendMail} id="contact">
       <h2 className="text2">Get In Touch</h2>
       <div className="contact__form-top ">
         <label className="contact__form-label text2">Name:</label>

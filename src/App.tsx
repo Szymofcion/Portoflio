@@ -28,10 +28,9 @@ const App = () => {
             <AboutMe />
           </div>
           <MyProjects />
-          {/* <Timeline /> */}
           <Contact />
-          <Footer />
         </div>
+          <Footer />
       </div>
     </div>
   );

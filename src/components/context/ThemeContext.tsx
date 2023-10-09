@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, {
   createContext,
   useState,
@@ -21,16 +22,25 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState("purple");
+  const storedTheme = localStorage.getItem("theme");
+  const [theme, setTheme] = useState<string>(storedTheme || "purple");
+
+  const updateTheme: React.Dispatch<React.SetStateAction<string>> = (
+    newTheme: React.SetStateAction<string>
+  ) => {
+    setTheme(newTheme);
+    if (typeof newTheme === "string") {
+      localStorage.setItem("theme", newTheme);
+    }
+  };
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, setTheme: updateTheme }}>
       {children}
     </ThemeContext.Provider>
   );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useTheme = (): ThemeContextProps => {
   const context = useContext(ThemeContext);
   if (!context) {

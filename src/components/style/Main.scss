@@ -137,3 +137,36 @@
     opacity: 1;
   }
 }
+
+@media (min-width: 768px) {
+ 
+}
+
+@media (min-width: 900px) {
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    &__top {
+  
+      &-button {
+        font-size: 1.4rem;
+      }
+    }
+    &__description {
+      font-size: 2.4rem;
+      &-text {
+        font-size: 1.5rem;
+
+      }
+    }
+  }
+ 
+}
+@media (min-width: 1600px) {
+
+}
+@media (min-width: 1800px) {
+
+}

@@ -1,6 +1,6 @@
 .title {
   margin-top: 2em;
-  font-size: 2em;
+  font-size: 2rem;
   letter-spacing: 2px;
   color: #7dfabb;
   padding: 0 32px;
@@ -123,4 +123,23 @@
   100% {
     scale: 1.15;
   }
+}
+@media (min-width: 768px) {
+ 
+}
+
+@media (min-width: 900px) {
+
+}
+
+@media (min-width: 1200px) {
+  .title {
+   font-size: 3rem;
+  }
+}
+@media (min-width: 1600px) {
+
+}
+@media (min-width: 1800px) {
+
 }

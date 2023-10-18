@@ -4,8 +4,9 @@
 .slide-exit {
   opacity: 0;
 }
+
 .projects {
-  max-width: 900px;
+  width: 100%;
   margin: 0 auto;
   &-title {
     font-size: 1.7rem;
@@ -110,4 +111,29 @@
       cursor: pointer;
     }
   }
+}
+@media (min-width: 768px) {
+  .projects__container {
+    width: 50%; /* Dla większych ekranów ustawiamy szerokość kontenera na 50% szerokości slidera */
+  }
+}
+
+@media (min-width: 900px) {
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    width: 500px;
+    margin: 0 auto;
+    &-title {
+      font-size: 3rem;
+      padding-top: 2em;
+      margin: 0 0 26.56px 32px;
+    }
+  }
+
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1800px) {
 }

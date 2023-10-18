@@ -64,11 +64,13 @@
   }
   &__arrow {
     position: absolute;
-    bottom: 50px;
+    bottom: 5%;
     right: 50%;
-    transform: translate(0, -50%);
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #7dfabb;
+    svg{
+      transform: translate(50%, 0);
+    }
   }
   &__image {
     position: absolute;
@@ -139,17 +141,26 @@
 }
 
 @media (min-width: 768px) {
- 
+  .container {
+  
+    &__description {
+      font-size: 2rem;
+      &-text {
+        font-size: 1.2rem;
+      }
+    }
+    &__arrow {
+      font-size: 3rem;
+    }
+  }
 }
 
 @media (min-width: 900px) {
-
 }
 
 @media (min-width: 1200px) {
   .container {
     &__top {
-  
       &-button {
         font-size: 1.4rem;
       }
@@ -158,15 +169,14 @@
       font-size: 2.4rem;
       &-text {
         font-size: 1.5rem;
-
       }
     }
+    &__arrow {
+      font-size: 4rem;
+    }
   }
- 
 }
 @media (min-width: 1600px) {
-
 }
 @media (min-width: 1800px) {
-
 }

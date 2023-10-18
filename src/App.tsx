@@ -12,10 +12,28 @@ import "./App.scss";
 import "./components/style/thema/_reset.scss";
 
 import { useTheme } from "./components/context/ThemeContext";
+import { useEffect, useState } from "react";
 
 const App = () => {
   const { theme } = useTheme();
+  const [showSlides, setShoweSlides] = useState<number>(1);
+  useEffect(() => {
+    const calculateSlidesPerPage = () => {
+      const windowWidth = window.innerWidth;
+      if (windowWidth >= 765) {
+        setShoweSlides(2);
+      } else {
+        setShoweSlides(1);
+      }
+    };
 
+    window.addEventListener("resize", calculateSlidesPerPage);
+    calculateSlidesPerPage();
+
+    return () => {
+      window.removeEventListener("resize", calculateSlidesPerPage);
+    };
+  }, []);
   return (
     <div className={theme}>
       <div className="background">
@@ -30,7 +48,7 @@ const App = () => {
           <MyProjects />
           <Contact />
         </div>
-          <Footer />
+        <Footer />
       </div>
     </div>
   );

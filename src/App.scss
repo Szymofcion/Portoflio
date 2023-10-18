@@ -30,7 +30,6 @@ p {
 .wrapper-aboutme {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 #light {
@@ -38,4 +37,25 @@ p {
 }
 #dark {
   background-color: #46045e;
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 900px) {
+  .wrapper-aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper-aboutme {
+    align-items: start;
+  }
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1800px) {
 }

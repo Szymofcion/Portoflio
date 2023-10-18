@@ -1,17 +1,16 @@
 .title {
-  margin-top: 2em;
+  padding: 2em;
   font-size: 2rem;
   letter-spacing: 2px;
   color: #7dfabb;
   padding: 0 32px;
 }
 .background-orbit {
-  height: 50vh;
+  height: 100%;
   width: 500px;
 }
 .orbit {
-  margin-top: 10em;
-
+  padding-top: 10em;
   display: flex;
   justify-content: center;
   &__center {
@@ -125,21 +124,18 @@
   }
 }
 @media (min-width: 768px) {
- 
 }
 
 @media (min-width: 900px) {
-
 }
 
 @media (min-width: 1200px) {
   .title {
-   font-size: 3rem;
+    padding-top: 39.84px;
+    font-size: 3rem;
   }
 }
 @media (min-width: 1600px) {
-
 }
 @media (min-width: 1800px) {
-
 }

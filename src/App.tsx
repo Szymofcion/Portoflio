@@ -2,6 +2,7 @@ import Main from "./components/Main";
 import LeftIcons from "./ui/LeftIcons";
 import Icons from "./components/Icons";
 import AboutMe from "./components/AboutMe";
+import MyProjectsSlider from "./components/MyProjectsSlider";
 import MyProjects from "./components/MyProjects";
 import NewNav from "./components/NewNav";
 // import Timeline from "./components/Timeline";
@@ -16,14 +17,14 @@ import { useEffect, useState } from "react";
 
 const App = () => {
   const { theme } = useTheme();
-  const [showSlides, setShoweSlides] = useState<number>(1);
+  const [showComponent, setShowComponent] = useState<boolean>(true);
   useEffect(() => {
     const calculateSlidesPerPage = () => {
       const windowWidth = window.innerWidth;
-      if (windowWidth >= 765) {
-        setShoweSlides(2);
+      if (windowWidth <= 765) {
+        setShowComponent(true);
       } else {
-        setShoweSlides(1);
+        setShowComponent(false);
       }
     };
 
@@ -45,7 +46,7 @@ const App = () => {
             <Icons />
             <AboutMe />
           </div>
-          <MyProjects />
+          {showComponent ? <MyProjectsSlider /> : <MyProjects />}
           <Contact />
         </div>
         <Footer />

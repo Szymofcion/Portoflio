@@ -33,7 +33,7 @@ import Footer from "./components/Footer";
 // import ultraGamers from "./assets/UltraGamers.png";
 // import portfolio from "./assets/Portfolio.png";
 // import netflix from "./assets/Netflix2.png";
-import { MyContext } from "./context/MyContext";
+// import { MyContext } from "./context/MyContext";
 import "./App.scss";
 import "./components/style/thema/_reset.scss";
 
@@ -158,7 +158,7 @@ const App = () => {
     };
   }, []);
   return (
-    <Provider.MyContext>
+  
       <div className={theme}>
         <div className="background">
           <LeftIcons />
@@ -175,7 +175,7 @@ const App = () => {
           <Footer />
         </div>
       </div>
-    </Provider.MyContext>
+   
   );
 };
 

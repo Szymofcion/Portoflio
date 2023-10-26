@@ -17,6 +17,7 @@ import {
   SiExpress,
 } from "react-icons/si";
 import { LiaCookieSolid } from "react-icons/lia";
+
 interface Slide {
   title: string;
   src: string;
@@ -120,4 +121,4 @@ const slides: Slide[] = [
   },
 ];
 
-export const MyContext = createContext({ slides });
+export const ProjectsContext = createContext({ slides });

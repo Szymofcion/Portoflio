@@ -1,20 +1,23 @@
 import { useContext } from "react";
-import MyContext from "../context/MyContext";
+import { ProjectsContext } from "../context/MyContext";
+
+
 const CardProject = () => {
-  const myData = useContext(MyContext);
-  console.log(myData);
+  const { slides } = useContext(ProjectsContext);
+
   return (
     <div>
-      <div>
-        <h2></h2>
-      </div>
-      <img src=""></img>
-      <div>
-        <p></p>
-        <p></p>
-      </div>
+      <h1>siemano</h1>
+      {slides.map((item, key) => {
+        return (
+          <div key={key}>
+            <h2>{item.title}</h2>
+          </div>
+        );
+      })}
     </div>
   );
 };
+
 
 export default CardProject;

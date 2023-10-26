@@ -1,5 +1,11 @@
+import CardProject from "../ui/CardProject";
+
 const MyProjects = () => {
-  return <div><h1>eee</h1></div>;
+  return (
+    <>
+      <CardProject />
+    </>
+  );
 };
 
 export default MyProjects;

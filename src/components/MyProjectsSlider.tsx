@@ -3,17 +3,17 @@ import { SetStateAction, useState } from "react";
 import { useContext } from "react";
 import { ProjectsContext } from "../context/MyContext";
 
-import "./style/MyProjects.scss";
-
+import "./style/MyProjectsSlide.scss";
 
 const MyProjectsSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const myProjects = useContext(ProjectsContext);
-  console.log(myProjects.slides);
-  
+
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? myProjects.slides.length - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide
+      ? myProjects.slides.length - 1
+      : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
   const goToNext = () => {

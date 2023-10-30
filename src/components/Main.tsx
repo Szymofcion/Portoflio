@@ -38,6 +38,7 @@ const Main = () => {
           <AiOutlineArrowDown />
         </a>
       </div>
+      
       {/* <div className="container__image">
         <img src={image} alt="" />
       </div> */}

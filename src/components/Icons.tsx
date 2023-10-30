@@ -21,6 +21,8 @@ const Icons = () => {
         <div className="magicpattern1"></div>
         <div className="magicpattern2"></div>
         <div className="magicpattern3"></div>
+        <div className="magicpattern4"></div>
+        <div className="magicpattern5"></div>
         <ul className="icons">
           <li>
             <img className="icons__css" src={css} />

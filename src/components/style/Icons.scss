@@ -10,21 +10,22 @@
   width: 500px;
 }
 .magicpattern1 {
-  z-index: 1;
-  right: 60%;
-  bottom: -80%;
+  z-index: 0;
+  right: 20%;
+  bottom: -150%;
   position: absolute;
-  width: 50%;
+  width: 40%;
   height: 50%;
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
   background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%2369c5fa%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  animation: rotate-slow 60s linear infinite;
 }
 .magicpattern2 {
-  z-index: 1;
+  z-index: 0;
   right: 5%;
-  bottom: -50%;
+  bottom: -70%;
   position: absolute;
   width: 20%;
   height: 30%;
@@ -32,10 +33,12 @@
   background-position: center center;
   background-repeat: repeat;
   background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%2369c5fa%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  animation: rotate-left 40s linear infinite;
 }
+
 .magicpattern3 {
   z-index: 0;
-  right: 45%;
+  right: 60%;
   bottom: -40%;
   position: absolute;
   width: 30%;
@@ -44,7 +47,33 @@
   background-position: center center;
   background-repeat: repeat;
   background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%2369c5fa%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-animation: rotate-right ;
+  animation: rotate-right 60s linear infinite;
+}
+.magicpattern4 {
+  z-index: 0;
+  right: 20%;
+  bottom: -50%;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%2369c5fa%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  animation: rotate-right 60s linear infinite;
+}
+.magicpattern5 {
+  z-index: 0;
+  right: 70%;
+  bottom: -85%;
+  position: absolute;
+  width: 34%;
+  height: 30%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%2369c5fa%22 d=%22M596.5 711.5Q256 923 283.5 548T624 336.5q313 163.5-27.5 375Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  animation: rotate-right 60s linear infinite;
 }
 @keyframes rotate-right {
   0% {
@@ -56,18 +85,18 @@ animation: rotate-right ;
 }
 @keyframes rotate-left {
   0% {
-    transform: rotate(0);
+    transform: rotate(360deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0);
   }
 }
 @keyframes rotate-slow {
   0% {
-    transform: rotate(0);
+    transform: rotate(360deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0);
   }
 }
 .orbit {

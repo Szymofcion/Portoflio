@@ -18,6 +18,9 @@ const Icons = () => {
           <img className="orbit__center-img" src={html} />
           <img className="orbit__center-img" src={react} />
         </div>
+        <div className="magicpattern1"></div>
+        <div className="magicpattern2"></div>
+        <div className="magicpattern3"></div>
         <ul className="icons">
           <li>
             <img className="icons__css" src={css} />

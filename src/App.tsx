@@ -1,6 +1,7 @@
 import Main from "./components/Main";
 import LeftIcons from "./ui/LeftIcons";
 import Icons from "./components/Icons";
+import DotRing from "./ui/DotMouse";
 import AboutMe from "./components/AboutMe";
 import MyProjectsSlider from "./components/MyProjectsSlider";
 import MyProjects from "./components/MyProjects";
@@ -38,6 +39,7 @@ const App = () => {
   }, []);
   return (
     <div className={theme}>
+      <DotRing />
       <div className="background">
         <LeftIcons />
         <NewNav />

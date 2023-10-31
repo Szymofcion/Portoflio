@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { ProjectsContext } from "../context/MyContext";
-
 import "./style/MyProjects.scss";
 
 const MyProjects = () => {
